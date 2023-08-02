@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background-color: #ffcbce1c;
+}
+
+.App-header {
+  position: fixed;
+  top: 0;
+
+  display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5em;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1em;
+  background-color: #9cc824b0;
+  border-bottom: 2px solid black;
+
+}
+
+.flower{
+  max-width: 3em;
+}
+
+.meditation{
+  max-width: 3em;
+}
+
+.items{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+
+}
+
+.time-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time-display{
+  font-size: 6em;
+  position: relative;
+  top: 0.2em;
+}
+
+.buttons-div{
+  padding: 0.7em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+
+  position: relative;
+  top: 9em;
+}
+
+.time-btn{
+  font-size: 1em;
+  background-color: #4266ddee;
+  color: #ffffff;
+  padding: 0.8em 1.2em;
+  border: none;
+  border-radius: 1.5em;
+  cursor: pointer;
+}
+
+.items-grid{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+
+  padding: 6em;
+}
+
+.circle{
+  z-index: -2;
+  max-width: 27em;
+  position: absolute;
+  top: 44%;
+  left: 49.5%;
+  transform: translate(-50%, -50%);
+}
+
+.lotos{
+  z-index: -1;
+  max-width: 16em;
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pause{
+  max-width: 3.5em;
+  position: absolute;
+  top: 67%;
+  left: 46.5%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.reset{
+  max-width: 3em;
+  position: absolute;
+  top: 67%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 0.5em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  background-color: #9cc824b0;
+  border-top: 2px solid black;
+}
+
+.btn-footer{
+  font-size: 1em;
+  background-color: #f8adb0;
+  color: #ffffff;
+  padding: 0.8em 2em;
+  border: none;
+  border-radius: 1.5em;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+.btn-footer:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 0.5em 0.5em -0.4em;
+}
+
+
+
+@media only screen and (max-width: 557px){
+  .footer{
+    padding: 0.5em;
+    gap: 1em;
+    flex-wrap: wrap;
+  }
+
+  .circle{
+    max-width: 23em;
+    position: absolute;
+    top: 37%;
+    left: 49.5%;
+  }
+
+  .lotos{
+    z-index: -1;
+    max-width: 14em;
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .btn-footer{
+    font-size: 1em;
+    background-color: #f8adb0;
+    color: #ffffff;
+    padding: 0.4em 1em;
+    border: none;
+    border-radius: 1.5em;
+    cursor: pointer;
+
+  }
+
+  .buttons-div{
+    gap: 1em;
+    flex-wrap: wrap;
+  }
+
+  .reset{
+    max-width: 3em;
+    top: 59%;
+    left: 60.3%;
+  }
+
+  .pause{
+    max-width: 3.5em;
+    top: 59%;
+    left: 40.5%;
+  }
+
+  .time-display{
+    font-size: 5.3em;
+    position: relative;
+    top: 0.6em;
+  }
+
+  
+}
+
+@media only screen and (max-width: 558px) and (max-width: 1023px){
+  .reset{
+    max-width: 3em;
+    top: 58%;
+    left: 59.3%;
+  }
+  
+  .circle{
+    max-width: 18em;
+    position: absolute;
+    top: 37%;
+    left: 49.5%;
+  }
+
+  .lotos{
+    z-index: -1;
+    max-width: 12em;
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+  .pause{
+    max-width: 3.5em;
+    top: 58%;
+    left: 40.5%;
+  }
+
+  .buttons-div{
+    gap: 1em;
+  
+    position: relative;
+    top: 9em;
+
+  }
+
+  .time-display{
+    font-size: 3.8em;
+
+  }
+}
+
+@media only screen and (min-width: 1441px){
+  .buttons-div{
+    gap: 1em;
+  
+    position: relative;
+    top: 12em;
+
+  }
+}
